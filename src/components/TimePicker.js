@@ -72,14 +72,14 @@ const TimePicker = ({ handleTime }) => {
   }, [hour, minutes, dayTime]);
   return (
     <div className="bg-white container">
-      <div class="container mx-auto  bg-gray-900">
-        <div class="w-full inline-flex text-lg border rounded-md shadow-lg p-2">
+      <div className="container mx-auto  bg-gray-900">
+        <div className="w-full inline-flex text-lg border rounded-md shadow-lg p-2">
           <select
             name=""
             id=""
             value={hour}
             onChange={(e) => setHour(e.target.value)}
-            class="px-2 outline-none appearance-none bg-transparent"
+            className="px-2 outline-none appearance-none bg-transparent"
           >
             {hours.map((hour, index) => {
               return (
@@ -89,12 +89,12 @@ const TimePicker = ({ handleTime }) => {
               );
             })}
           </select>
-          <span class="px-2">:</span>
+          <span className="px-2">:</span>
           <select
             name=""
             id=""
             value={minutes}
-            class="px-2 outline-none appearance-none bg-transparent"
+            className="px-2 outline-none appearance-none bg-transparent"
             onChange={(e) => setMinutes(e.target.value)}
           >
             {minutess.map((minute, index) => {
@@ -109,7 +109,7 @@ const TimePicker = ({ handleTime }) => {
             name=""
             id=""
             value={dayTime}
-            class="px-2 outline-none appearance-none bg-transparent"
+            className="px-2 outline-none appearance-none bg-transparent"
             onChange={(e) => setDayTime(e.target.value)}
           >
             <option value="AM">AM</option>

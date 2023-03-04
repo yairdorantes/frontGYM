@@ -9,6 +9,7 @@ import two from "./media/22.jpeg";
 import three from "./media/3.jpeg";
 import four from "./media/4.jpeg";
 import five from "./media/5.jpeg";
+import { Link } from "react-router-dom";
 const exps = [
   {
     name: "Dua Lipa",
@@ -29,7 +30,6 @@ const exps = [
 const Experiences = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  
   useEffect(() => {
     function handleResize() {
       setWindowWidth(window.innerWidth);
@@ -87,6 +87,11 @@ const Experiences = () => {
             );
           })}
       </Swiper>
+      <Link to="contacto">
+        <div className="text-center m-10">
+          <button className="btn btn-success">Contacta me</button>
+        </div>
+      </Link>
       {/* <div className="flex  w-full justify-center">
        
       </div> */}

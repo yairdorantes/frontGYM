@@ -1,15 +1,19 @@
-import Contact from "./components/Contact";
 import Experiences from "./components/Experiences";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
+import Routers from "./router/Routers";
 
 function App() {
   return (
     <>
-      <NavBar />
-      <Home />
-      <Experiences />
-      <Contact />
+      <Routers>
+        {/* 
+        <NavBar />
+        <Home />
+        <Experiences /> 
+        
+        */}
+      </Routers>
     </>
   );
 }
